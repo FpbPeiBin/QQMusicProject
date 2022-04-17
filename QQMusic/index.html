@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QQ音乐</title>
+    <!-- 引入CSS文件 -->
+    <link rel="stylesheet" href="css/header-nav.css">
+    <link rel="stylesheet" href="css/playlist-recommend.css">
+    <!-- 引入js文件 -->
+    <script src="js/header.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/playlist-recommend.js"></script>
+</head>
+
+<body>
+    <!-- 版心页面 -->
+    <div id="whole-page">
+        <!-- 头部 -->
+        <header>
+            <!-- logo -->
+            <img src="images/QQ-logo.png">
+
+            <!-- 导航栏 -->
+            <ul class="header-top-nav clearfix">
+                <li class="default-selected"><a href="javasript:;" class="music-text">音乐馆</a></li>
+                <li><a href="javasript:;" class="music-text">我的音乐</a></li>
+                <li><a href="javasript:;" class="music-text">客户端</a></li>
+                <li><a href="javasript:;" class="music-text">开放平台</a></li>
+                <li><a href="javasript:;" class="music-text">VIP</a></li>
+                <img src="images/QQ-privilege.png">
+                <span class="top-nav-span"></span>
+            </ul>
+
+            <!-- 搜索框 -->
+            <div class="header-search-box">
+                <input type="text" placeholder="搜索用户、MV、歌单、用户" class="search-input">
+                <button></button>
+            </div>
+
+            <!-- 服务区域 -->
+            <div class="header-user">
+                <!-- 登录 -->
+                <a href="javasript;;">登录</a>
+
+                <!-- 开通VIP -->
+                <div class="open-VIP-box">
+                    <div class="openVIP">开通VIP</div>
+                    <div class="openVIP-down">
+                        <div class="open-green-diamond">开通绿钻豪华版</div>
+                        <div class="open-pay">开通付费包</div>
+                    </div>
+                </div>
+
+                <!-- 充值 -->
+                <div class="top-up-box">
+                    <div class="top-up">充值</div>
+                    <div class="top-up-down">
+                        <div class="purchase-le">充值乐币</div>
+                        <div class="top-up-menu">充值饭票</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- 白色导航栏 -->
+        <nav class="white-nav">
+            <div>
+                <a href="#" class="white-nav-current">首页</a>
+                <a href="#">歌手</a>
+                <a href="#">新碟</a>
+                <a href="#">排行榜</a>
+                <a href="#">分类歌单</a>
+                <a href="#">电台</a>
+                <a href="#">MV</a>
+                <a href="#">数字专辑</a>
+                <a href="#">票务</a>
+            </div>
+        </nav>
+
+        <!-- 歌单推荐 -->
+        <div class="playlist-section">
+            <section class="playlist">
+                <!-- 标题 -->
+                <div class="playlist-head">
+                    <p class="playlist-title">歌&nbsp;单&nbsp;推&nbsp;荐</p>
+                </div>
+
+                <!-- tab栏 -->
+                <div class="playlist-tab">
+                    <a href="javasript:;" class="playlist-tab-current">为你推荐</a>
+                    <a href="javasript:;">网络歌曲</a>
+                    <a href="javasript:;">英语</a>
+                    <a href="javasript:;">伤感</a>
+                    <a href="javasript:;">官方歌单</a>
+                    <a href="javasript:;">情歌</a>
+                </div>
+
+                <!-- 左右箭头 -->
+                <div class="arrow-left-box">
+                    <div class="arrow-left"></div>
+                </div>
+                <div class="arrow-right-box">
+                    <div class="arrow-right"></div>
+                </div>
+
+                <!-- 轮播图区域 -->
+                <div class="carousel-area">
+                    <!-- 小圆点 -->
+                    <div class="carousel-point-box">
+                        <div class="carousel-point current-point"></div>
+                        <div class="carousel-point"></div>
+                        <div class="carousel-point"></div>
+                    </div>
+
+
+                    <!-- 轮播图 -->
+                    <div class="carousel clearfix">
+                        <ul class="carousel-item">
+                            <li>
+                                <a href="#" class="carousel-pic1">
+                                    <div class="display-button"></div>
+                                </a>
+                                <div class="playlist-mask"></div>
+                                <a href="#" class="playlist-introduction">『旋律rap』特立独行，开辟一方</a>
+                                <div class="play-amount">播放量：25.8万</div>
+                            </li>
+                            <li>
+                                <a href="#" class="carousel-pic2">
+                                    <div class="display-button"></div>
+                                </a>
+                                <div class="playlist-mask"></div>
+                                <a href="#" class="playlist-introduction">严浩翔 | 云程发轫，会万里可期</a>
+                                <div class="play-amount">播放量：72.7万</div>
+                            </li>
+                            <li>
+                                <a href="#" class="carousel-pic3">
+                                    <div class="display-button"></div>
+                                </a>
+                                <div class="playlist-mask"></div>
+                                <a href="#" class="playlist-introduction">Remix中文说唱·枕头为什么湿了</a>
+                                <div class="play-amount">播放量：111.0万</div>
+                            </li>
+                            <li>
+                                <a href="#" class="carousel-pic4">
+                                    <div class="display-button"></div>
+                                </a>
+                                <div class="playlist-mask"></div>
+                                <a href="#" class="playlist-introduction">满级人类进化之路必备BGM</a>
+                                <div class="play-amount">播放量：2658.1万</div>
+                            </li>
+                            <li>
+                                <a href="#" class="carousel-pic5">
+                                    <div class="display-button"></div>
+                                </a>
+                                <div class="playlist-mask"></div>
+                                <a href="#" class="playlist-introduction">蹦迪嗨曲｜拥抱狂欢，放肆玩乐</a>
+                                <div class="play-amount">播放量：648.6万</div>
+                            </li>
+                        </ul>
+                        <ul class="carousel-item2">
+                            <li>
+                                <a href="#" class="carousel-pic6">
+                                    <div class="display-button"></div>
+                                </a>
+                                <div class="playlist-mask"></div>
+                                <a href="#" class="playlist-introduction">90后回忆: MP3时代的必备歌曲</a>
+                                <div class="play-amount">播放量：1.6亿</div>
+                            </li>
+                            <li>
+                                <a href="#" class="carousel-pic7">
+                                    <div class="display-button"></div>
+                                </a>
+                                <div class="playlist-mask"></div>
+                                <a href="#" class="playlist-introduction">粤语女声｜环绕在耳边的港式风味</a>
+                                <div class="play-amount">播放量：90.2万</div>
+                            </li>
+                            <li>
+                                <a href="#" class="carousel-pic8">
+                                    <div class="display-button"></div>
+                                </a>
+                                <div class="playlist-mask"></div>
+                                <a href="#" class="playlist-introduction">游戏BGM • 高潮踩点，点燃热血</a>
+                                <div class="play-amount">播放量：3042.1万</div>
+                            </li>
+                            <li>
+                                <a href="#" class="carousel-pic9">
+                                    <div class="display-button"></div>
+                                </a>
+                                <div class="playlist-mask"></div>
+                                <a href="#" class="playlist-introduction">Jazz&Blues · 酒馆微醺般情调</a>
+                                <div class="play-amount">播放量：310.6万</div>
+                            </li>
+                            <li>
+                                <a href="#" class="carousel-pic10">
+                                    <div class="display-button"></div>
+                                </a>
+                                <div class="playlist-mask"></div>
+                                <a href="#" class="playlist-introduction">有没有一首歌，曾让你热泪盈眶？</a>
+                                <div class="play-amount">播放量：1.4亿</div>
+                            </li>
+                        </ul>
+                        <ul class="carousel-item3">
+                            <li>
+                                <a href="#" class="carousel-pic11">
+                                    <div class="display-button"></div>
+                                </a>
+                                <div class="playlist-mask"></div>
+                                <a href="#" class="playlist-introduction">“小众且好听” 超温柔的英文歌</a>
+                                <div class="play-amount">播放量：128.9亿</div>
+                            </li>
+                            <li>
+                                <a href="#" class="carousel-pic12">
+                                    <div class="display-button"></div>
+                                </a>
+                                <div class="playlist-mask"></div>
+                                <a href="#" class="playlist-introduction">李信｜这里是为我所统帅的战场！</a>
+                                <div class="play-amount">播放量：1978.4</div>
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

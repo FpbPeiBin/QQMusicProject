@@ -1,0 +1,347 @@
+/* 歌单区域 */
+.playlist-section {
+    position: relative;
+    width: 100%;
+    height: 532px;
+    background-color: #f4f4f4;
+}
+
+/* 100%比例下歌单区域 */
+.playlist {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+
+/* 标题盒子 */
+.playlist-head {
+    width: 100%;
+    height: 114px;
+}
+
+/* 标题 */
+.playlist-title {
+    width: 100%;
+    height: 30px;
+    padding-top: 43px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* tab */
+.playlist-tab {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height: 50px;
+    margin: auto;
+}
+
+/* 每个item */
+.playlist-tab a {
+    font-size: 15px;
+}
+
+.playlist-tab a:hover {
+    color: #31C27C;
+}
+
+/* 当前item样式 */
+.playlist-tab-current {
+    color: #31C27C;
+}
+
+
+
+
+
+/* 轮播图区域 */
+.carousel-area {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 368px;
+}
+
+/* 左箭头盒子 */
+.arrow-left-box {
+    position: absolute;
+    left: -80px;
+    top: 50%;
+    margin-top: -55px;
+    width: 80px;
+    height: 110px;
+    background-color: #ececec;
+    /* transform: translateX(-80px); */
+    transition: all 0.5s;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* 右箭头盒子 */
+.arrow-right-box {
+    position: absolute;
+    z-index: 2;
+    right: -80px;
+    top: 50%;
+    margin-top: -55px;
+    width: 80px;
+    height: 110px;
+    background-color: #ececec;
+    right: -80px;
+    transition: all 0.5s;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* 左箭头 */
+.arrow-left {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 40px;
+    border-left: 2px solid #3d3d3d;
+    border-bottom: 2px solid #3d3d3d;
+    transform: rotate(45deg);
+}
+
+/* 右箭头 */
+.arrow-right {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 40px;
+    border-top: 2px solid #3d3d3d;
+    border-right: 2px solid #3d3d3d;
+    transform: rotate(45deg);
+}
+
+/* 鼠标经过箭头盒子，盒子背景变色 */
+.arrow-left-box:hover,
+.arrow-right-box:hover {
+    background-color: #e1e1e1;
+}
+
+/* 鼠标经过区域，左箭头往右渐变显示 */
+.playlist-section:hover .arrow-left-box {
+    left: 0;
+    opacity: 1;
+}
+
+/* 鼠标经过区域，右箭头往左渐变显示 */
+.playlist-section:hover .arrow-right-box {
+    right: 0;
+    opacity: 1;
+}
+
+
+
+/* 轮播图（300%） */
+.carousel {
+    position: absolute;
+    width: 300%;
+    height: 283px;
+    left: 0;
+}
+
+/* 单页轮播图 */
+.carousel-item,
+.carousel-item2,
+.carousel-item3 {
+    display: flex;
+    float: left;
+    justify-content: space-between;
+    width: 1200px;
+    height: 100%;
+}
+
+
+
+/* 每个视频 */
+.carousel-item>li,
+.carousel-item2>li,
+.carousel-item3>li {
+    width: 224px;
+    height: 283px;
+}
+
+/* 视频背景图 */
+.carousel-pic1,
+.carousel-pic2,
+.carousel-pic3,
+.carousel-pic4,
+.carousel-pic5,
+.carousel-pic6,
+.carousel-pic7,
+.carousel-pic8,
+.carousel-pic9,
+.carousel-pic10,
+.carousel-pic11,
+.carousel-pic12 {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 224px;
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+/* 视频背景图路径 */
+.carousel-pic1 {
+    background-image: url(../images/playlist-recommend/playlist1/picture1.webp);
+}
+
+.carousel-pic2 {
+    background-image: url(../images/playlist-recommend/playlist1/picture2.webp);
+}
+
+.carousel-pic3 {
+    background-image: url(../images/playlist-recommend/playlist1/picture3.webp);
+}
+
+.carousel-pic4 {
+    background-image: url(../images/playlist-recommend/playlist1/picture4.webp);
+}
+
+.carousel-pic5 {
+    background-image: url(../images/playlist-recommend/playlist1/picture5.webp);
+}
+
+.carousel-pic6 {
+    background-image: url(../images/playlist-recommend/playlist2/picture6.webp);
+}
+
+.carousel-pic7 {
+    background-image: url(../images/playlist-recommend/playlist2/picture7.webp);
+}
+
+.carousel-pic8 {
+    background-image: url(../images/playlist-recommend/playlist2/picture8.webp);
+}
+
+.carousel-pic9 {
+    background-image: url(../images/playlist-recommend/playlist2/picture9.webp);
+}
+
+.carousel-pic10 {
+    background-image: url(../images/playlist-recommend/playlist2/picture10.webp);
+}
+
+.carousel-pic11 {
+    background-image: url(../images/playlist-recommend/playlist3/picture11.webp);
+}
+
+.carousel-pic12 {
+    background-image: url(../images/playlist-recommend/playlist3/picture12.webp);
+}
+
+/* 歌单介绍 */
+.playlist-introduction {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000;
+}
+
+.playlist-introduction:hover {
+    color: #31C27C;
+}
+
+/* 播放量 */
+.play-amount {
+    font-size: 14px;
+    color: #999;
+}
+
+/* 视频遮罩层 */
+.playlist-mask {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 224px;
+    height: 224px;
+    background-color: rgba(0, 0, 0, .2);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* 鼠标经过，显示遮罩层 */
+.carousel-item li:hover .playlist-mask,
+.carousel-item2 li:hover .playlist-mask,
+.carousel-item3 li:hover .playlist-mask {
+    display: block;
+}
+
+/* 鼠标经过，图片缩放 */
+.carousel-item li:hover .carousel-pic1,
+.carousel-item li:hover .carousel-pic2,
+.carousel-item li:hover .carousel-pic3,
+.carousel-item li:hover .carousel-pic4,
+.carousel-item li:hover .carousel-pic5,
+.carousel-item2 li:hover .carousel-pic6,
+.carousel-item2 li:hover .carousel-pic7,
+.carousel-item2 li:hover .carousel-pic8,
+.carousel-item2 li:hover .carousel-pic9,
+.carousel-item2 li:hover .carousel-pic10,
+.carousel-item3 li:hover .carousel-pic11,
+.carousel-item3 li:hover .carousel-pic12 {
+    background-size: 110%;
+}
+
+/* 播放按钮 */
+.display-button {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    margin-top: -35px;
+    margin-left: -35px;
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/playlist-recommend/display-button.png);
+    background-size: contain;
+    transform: scale(0.5);
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+/* 鼠标经过，播放按钮渐变 */
+.carousel-item li:hover .display-button,
+.carousel-item2 li:hover .display-button,
+.carousel-item3 li:hover .display-button {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+
+/* 装三个小圆圈的盒子 */
+.carousel-point-box {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    bottom: 30px;
+    margin-left: -35px;
+    width: 70px;
+    height: 10px;
+}
+
+/* 三个圆点 */
+.carousel-point {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #e1e1e1;
+    cursor: pointer;
+}
+
+/* 当前选中圆点 */
+.current-point {
+    background-color: #afafaf;
+}
