@@ -40,6 +40,7 @@ a {
 
 /* 版心设置 */
 #whole-page {
+    position: relative;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -117,6 +118,96 @@ header img {
     height: 100%;
     line-height: 90px;
     color: #000;
+}
+
+/* "登录" */
+.login-font {
+    cursor: pointer;
+}
+
+.login-font:hover {
+    color: #31C27C;
+}
+
+/* 点击登陆后背景为遮罩层 */
+.login-mask {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 120%;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+/* 登录盒子 */
+.login {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -150px;
+    z-index: 15;
+    width: 600px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* “手机登录”字样 */
+.use-phone-number {
+    display: inline-block;
+    width: 95%;
+    text-align: center;
+    margin-top: 20px;
+    color: #31C27C;
+    font-size: 18px;
+}
+
+/* 输入框 “登录”按钮  */
+.login input,
+.login-confirm {
+    display: block;
+    margin-left: 100px;
+    width: 400px;
+    height: 50px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    border: 2px solid grey;
+    font-size: 18px;
+}
+
+.login-confirm {
+    color: #fff;
+    background-color: #1e6fff;
+    cursor: pointer;
+}
+
+.login input:nth-of-type(1) {
+    margin-top: 20px;
+}
+
+.phone-warning,
+.pwd-warning {
+    visibility: hidden;
+    margin-left: 100px;
+    margin-bottom: 5px;
+    width: 400px;
+    height: 20px;
+    color: red;
+}
+
+/* 关闭按钮 */
+.close-button {
+    font-family: 'icomoon';
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #31C27C;
 }
 
 /* “音乐馆”字体 */

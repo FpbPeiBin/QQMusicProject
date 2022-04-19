@@ -18,6 +18,18 @@
 <body>
     <!-- 版心页面 -->
     <div id="whole-page">
+        <!-- 背景遮罩层 -->
+        <div class="login-mask"></div>
+        <!-- 登录 -->
+        <div class="login">
+            <p class="use-phone-number">手机登录</p>
+            <span class="close-button"></span>
+            <input type="text" placeholder="手机号码" class="phone-number">
+            <div class="phone-warning"></div>
+            <input type="text" placeholder="密码" class="password">
+            <div class="pwd-warning"></div>
+            <button class="login-confirm">登录</button>
+        </div>
         <!-- 头部 -->
         <header>
             <!-- logo -->
@@ -43,7 +55,7 @@
             <!-- 服务区域 -->
             <div class="header-user">
                 <!-- 登录 -->
-                <a href="javasript;;">登录</a>
+                <div class="login-font">登录</div>
 
                 <!-- 开通VIP -->
                 <div class="open-VIP-box">
