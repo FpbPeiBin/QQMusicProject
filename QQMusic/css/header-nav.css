@@ -122,6 +122,8 @@ header img {
 
 /* "登录" */
 .login-font {
+    height: 90px;
+    position: relative;
     cursor: pointer;
 }
 
@@ -467,5 +469,75 @@ header img {
 
 /* 鼠标经过链接变色 */
 .white-nav a:hover {
+    color: #31C27C;
+}
+
+
+
+
+
+/* 登陆成功后渲染的样式 */
+/* "登录"渲染为一级头像 */
+.user-login {
+    margin-top: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* 用户信息框 */
+.user-inf {
+    display: none;
+    position: absolute;
+    z-index: 15;
+    top: 90px;
+    left: 0;
+    width: 260px;
+    height: 150px;
+    background-color: #fff;
+}
+
+/* 二级头像 */
+.user-head {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 100px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+/* 用户昵称 */
+.user-name {
+    margin-top: 10px;
+    width: 60px;
+    font-size: 15px;
+}
+
+.user-name:hover {
+    color: #31C27C;
+}
+
+/* 退出登录按钮 */
+.user-logout {
+    margin-left: 10px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    border: 0;
+    font-size: 15px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.user-logout:hover {
     color: #31C27C;
 }
